@@ -12,7 +12,7 @@
     iii. generate the temporal aligned annotation based on re-labelled timestamp
 4. Check the reprojection manually, and clean the annotation (recursive process based on reproection and visualization)
 
-### SPAD Camera
+### SPAD Camera Extrinsics
 world -> spad, obtained from cv2.solvePnP()
 R_world2spad = np.array([[0.0850757, -0.02371301, 0.99609227], [0.07138514, -0.99700263, -0.02983165], [0.99381401, 0.07364413, -0.08312794]])
 t_world2spad = np.array([[-189.15649423], [596.16954803], [1358.12431652]])
@@ -109,7 +109,7 @@ t_world2spad = np.array([[-189.15649423], [596.16954803], [1358.12431652]])
 3. spad_pnp_reprojection.py: pnp reprojection and check the correctness
 4. spad_cleaned_data_generator.py: generate the temporal aligned annotation
 
-### SPAD Camera
+### SPAD Camera extrinsics
 world -> spad, obtained from cv2.solvePnP()
 1. For ambient_partial_long, ambient_partial_short, sun_SE_long
 R_world2spad = np.array([[0.0959831, -0.02308601, 0.99511521], [0.12097804, -0.99204907, -0.03468372], [0.98800382, 0.12371614, -0.09242704]])
