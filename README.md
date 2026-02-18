@@ -4,7 +4,7 @@
 ## 4-bit sequences
 
 ### Data processing flow and py files
-1. annotations_extractor.py: generate annotation with SPAD camera intrinsics K and optitrack.csv (annotation fps: 30, alige with the optitrack system)
+1. annotations_extractor.py: generate annotation with SPAD camera intrinsics, extrinsics and optitrack.csv (annotation fps: 30, alige with the optitrack system)
 2. xbit_visualizer.py: visualize the image
 3. spad_pnp_reprojection.py: 
     i. re-label the timestamp
@@ -104,7 +104,7 @@ t_world2spad = np.array([[-189.15649423], [596.16954803], [1358.12431652]])
 ## binary sequences
 
 ### Data processing flow and py files
-1. annotations_extractor.py: generate annotation with SPAD camera intrinsics K and optitrack.csv (annotation fps: 30, alige with the optitrack system)
+1. annotations_extractor.py: generate annotation with SPAD camera intrinsics, extrinsics and optitrack.csv (annotation fps: 30, alige with the optitrack system)
 2. bin2png.py: clean the .bin files, convert .bin files to desired bit-depth with correct timestamp      (recursive process based on reproection and visualization)
 3. spad_pnp_reprojection.py: pnp reprojection and check the correctness
 4. spad_cleaned_data_generator.py: generate the temporal aligned annotation
